@@ -37,9 +37,6 @@ class Message
         ]));
     }
 
-    #Assert\Length(min=4 minMessage="Nique tout t'es mort")
-   // #[Assert\Length(min(4),minMessage:"OuiBro")]
-
     #[ORM\Column(nullable: true)]
     private ?int $id_parent = null;
 
