@@ -6,7 +6,11 @@ Symfony
 ## Installation
 Tout d'abord clonez le repository
 
-Allez dans le dossier "my_project_directory" executez :
+Allez dans le dossier "my_project_directory" 
+```sh
+cd my_project_directory
+```
+executez :
 ```sh
 composer install
 ```
@@ -25,6 +29,10 @@ php bin/console doctrine:migrations:migrate
 Pour remplir la base de donnée effectuer :
 ```sh
 php bin/console doctrine:fixtures:load
+```
+Enfin lancez votre serveur 
+```sh
+symfony serve
 ```
 Si vous vous rendez sur le site http://localhost:8000/ vous devriez voir apparaitre le systeme de connexion.
 
