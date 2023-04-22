@@ -30,8 +30,7 @@ class PostController extends AbstractController
         $FormComm->handleRequest($request);
         if($FormComm->isSubmitted() && $FormComm->isValid())
         {
-            //$user = $this->getUser();
-            // dd($user->getId());
+            
             $Comm->setUser($this->getUser());
             $Comm->setDate(new \DateTime());
             $Comm->setidParent($id);

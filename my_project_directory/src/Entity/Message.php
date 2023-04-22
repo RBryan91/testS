@@ -93,10 +93,5 @@ class Message
 
         return $this;
     }
-    public function __toString()
-    {
-        return $this->id;
-    }
-
     
 }

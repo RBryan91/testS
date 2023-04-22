@@ -23,7 +23,7 @@ class MainController extends AbstractController
         if (!$this->getUser()) {
             return $this->redirectToRoute('app_login');
         }
-        $repository = $messageRepository->findAll();
+        $repository = $messageRepository->findBy([],['date' => 'DESC']);
 
         $message = new Message;
         $Formmessage = $this->createForm(MessageType::class, $message);

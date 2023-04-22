@@ -21,6 +21,16 @@
         </div>
     {% endif %}
     <div>
+    <h2>Ajouter un post</h2>
+        {{form_start(formmessage)}}
+        <div class="flex">
+        {{form_row(formmessage.contenu)}}
+        {{form_row(formmessage.button)}}
+        </div>
+        {{form_end(formmessage)}}
+    </div>
+    <br>
+    <div>
         {% if user != null %}
         <h2>Liste des posts</h2>
 
@@ -67,14 +77,6 @@
        
        
     </div>
-    <div>
-    <h2>Ajouter un post</h2>
-        {{form_start(formmessage)}}
-        <div class="flex">
-        {{form_row(formmessage.contenu)}}
-        {{form_row(formmessage.button)}}
-        </div>
-        {{form_end(formmessage)}}
-    </div>
+    
 </div>
 {% endblock %}
